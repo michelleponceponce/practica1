@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*afectando etiqueta*/
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+nav {
+    width: auto;
+    color: white;
+}
+
+nav ul li{
+    display: inline-block;
+    
+    list-style: none;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    background-color: darkcyan;
+
+}
+
+main {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+
+/*afectando clase*/
+section {
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+    background-color: rgb(114, 176, 184);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/*afectanto id*/

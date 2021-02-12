@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:ital,wght@1,300&family=Titillium+Web:wght@300&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -5,8 +6,24 @@
 }
 
 /*afectando etiqueta*/
+/* referencia de las fuentes que escogí
+font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+*/
 html {
     scroll-behavior: smooth;
+}
+h1 {
+    font-family:'Merriweather', serif;
+}
+
+h2,h3,h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, a, table{
+    font-family: 'Titillium Web', sans-serif;
 }
 
 header {
@@ -14,13 +31,10 @@ header {
     color: white;
     display: flex;
     flex-direction: row;
-    height: 10vh;
+    height: auto;
     align-items: center;
     justify-content: space-between;
 }
-
-
-
 
 nav {
     width: auto;
@@ -51,6 +65,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     }
 
 
@@ -66,3 +81,45 @@ section {
 }
 
 /*afectanto id*/
+
+#wellcome {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    background-image: url(../img/code3.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+}
+
+#aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#profilePic {
+    width: 500px;
+    height: 400px;
+    background-color: black;
+    background-image: url(../img/code.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.9);
+}
+
+

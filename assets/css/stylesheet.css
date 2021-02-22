@@ -27,11 +27,12 @@ p, a, table{
 }
 
 header {
+    width: 100%;
+    height: auto;
     background-color: black;
     color: white;
     display: flex;
     flex-direction: row;
-    height: auto;
     align-items: center;
     justify-content: space-between;
 }
@@ -42,8 +43,7 @@ nav {
 }
 
 nav ul li{
-    display: inline-block;
-    
+    display: inline-block; 
     list-style: none;
 }
 
@@ -94,6 +94,7 @@ section {
     align-items: center;
     text-align: center;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #aboutMe {
@@ -104,8 +105,12 @@ section {
     text-align: center;
 }
 
+#bio {
+    margin: 25px;
+}
+
 #profilePic {
-    width: 500px;
+    width: 400px;
     height: 400px;
     background-color: black;
     background-image: url(../img/code.jpg);
@@ -120,6 +125,67 @@ section {
     align-items: center;
     overflow: hidden;
     box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.9);
+}
+
+#social {
+    margin-top: 15px;
+}
+
+#social li {
+    display: inline-block;
+}
+#social li a {
+    font-size: x-large;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#social li a.facebook :hover {
+    color: dodgerblue;
+    transition: 0.5s;
+}
+
+#social li a.instagram :hover {
+    color: hotpink;
+    transition: 0.5s;
+}
+
+#social li a.website :hover {
+    color: slateblue;
+    transition: 0.5s;
+}
+
+/* condicional si la pagina tiene 800 px va a hacer lo siguiente
+todo lo que sea menor a 800 tambien va a aplicar y si sobrepasa , ya no*/
+@media (max-width: 640px) {
+    nav ul li{
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        list-style: none;
+    }
+
+    #imagenprin {
+        width: 200px;
+        height: 200px;
+    }
+
+    #profilePic {
+        width: 300px;
+        height: 300px;
+    }
+    
+    nav {
+        display: ;
+    }
+
+    header {
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-end;
+        list-style: none;
+    }
 }
 
 
